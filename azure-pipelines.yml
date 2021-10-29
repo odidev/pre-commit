@@ -9,7 +9,7 @@ resources:
     - repository: asottile
       type: github
       endpoint: github
-      name: asottile/azure-pipeline-templates
+      name: odidev/azure-pipeline-templates
       ref: refs/tags/v2.1.0
 
 jobs:
