@@ -6,7 +6,7 @@ trigger:
 
 resources:
   repositories:
-    - repository: asottile
+    - repository: odidev
       type: github
       endpoint: github
       name: odidev/azure-pipeline-templates
