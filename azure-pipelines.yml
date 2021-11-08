@@ -13,7 +13,7 @@ resources:
       ref: refs/tags/v2.1.0
 
 jobs:
-- template: job--python-tox.yml@asottile
+- template: job--python-tox.yml@odidev
   parameters:
     toxenvs: [py37]
     os: windows
@@ -30,7 +30,7 @@ jobs:
       displayName: install dart
     - powershell: testing/get-r.ps1
       displayName: install R
-- template: job--python-tox.yml@asottile
+- template: job--python-tox.yml@odidev
   parameters:
     toxenvs: [py37]
     os: linux
@@ -46,7 +46,7 @@ jobs:
       displayName: install swift
     - bash: testing/get-r.sh
       displayName: install R
-- template: job--python-tox.yml@asottile
+- template: job--python-tox.yml@odidev
   parameters:
     toxenvs: [pypy3, py36, py37, py38, py39]
     os: linux
